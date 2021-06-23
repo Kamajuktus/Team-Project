@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Real-estate website</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <!-- Icon link -->
+  <link rel="icon" href="assets/infinite.png">
+  <!-- Font-awesome -->
+  <script src="https://kit.fontawesome.com/000e555006.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleListApartment.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="page">
+
+    <section id="title">
+      <div class="container-fluid">
+
+        <!-- Navigation Bar open -->
+
+        <!-- Navbar content open-->
+        <nav class="navbar nav-menu navbar-expand-lg navbar-dark ">
+          <!-- toggler button open -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toggler button close -->
+
+          <!-- Navbar slogan open-->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/infinite.png" width="60" height="50" class="d-inline-block align-top" alt="">
+            <font size="6" color="#EB4034" face="'Fredoka One', cursive">INFINITY</font>
+          </a>
+          <!-- Navbar slogan close-->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 180px;">
+
+            <div class="col-9 nav-menu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="habitation.html">Habitation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="VIP.html">VIP Club</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger btn-signIn d-none d-lg-block d-lg-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bars"></i>&nbsp;&nbsp;<i class="fas fa-user-circle "></i>
+                </button>
+                <div class="dropdown-menu ">
+                  <a id="register-form" class="dropdown-item" href="#">Sign up</a>
+                  <a id="login-form" class="dropdown-item" href="#">Log in</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Host your home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar content close-->
+
+        <!-- Navigation Bar close -->
+      </div>
+      <!-- Header close -->
+    </section>
+
+    <!-- Popup Register Form open -->
+    <div class="popup popup-register">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn">Create new account</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Email" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <i class="fas fa-times-circle fa-2x close" id="closereg"></i>
+      </div>
+    </div>
+    <!-- Popup Register Form close -->
+
+    <!-- Popup Login Form open -->
+    <div class="popup popup-login">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log in as a user</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <i class="fas fa-times-circle fa-2x close" id="closelog"></i>
+      </div>
+    </div>
+    <!-- Popup Login Form close -->
+
+    <!-- Content of Main page open -->
+    <div class="wraper">
+      <div class="pictures" style="padding: 90px 20px 20px 25px;">
+
+        <div class="row">
+          <div class="col-7">
+            <img class="imgs" src="assets/dog.jpg" alt="">
+          </div>
+          <div class="col-5">
+            <div class="row row-cols-md-2">
+              <div class="col-12" style="width:700px;">
+                <img src="assets/ocean.jpg" alt="" class="imgs2">
+              </div>
+            </div>
+            <div class="row row-cols-md-2 down">
+
+              <div class="col-6">
+                <img src="assets/grass.jpg" alt="" class="imgs2" style="width:100%; height:245px;">
+              </div>
+              <div class="col-6">
+                <img src="assets/view.jpg" alt="" class="imgs2" style="width:100%; height:245px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formShow">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip01">First name</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip02">Last name</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip03">City</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip04">State</label>
+              <select class="custom-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip05">Zip</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                Please provide a valid zip.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+      </div>
+      <div class="main-content">
+        <h4>House, 2 Bedrooms + Convertible bed(s), 2 Baths, (Sleeps 6)</h4><br>
+        <p>Availability: Check CALENDAR at right first</p>
+        <p>PLEASE NOTE: The house has a $120 cleaning fee</p>
+        <p>PET and SECURITY DEPOSITS are REFUNDABLE.</p>
+        <p>Long Term: No long-term. No monthly rentals. No exceptions.</p>
+        <p>This is a beautiful retreat with panoramic ocean views. The views are absolutely spectacular! Views of the coastline forever. There is also a view of the Point Arena lighthouse.</p>
+        <p>Look out through the glass walls of this coastal cliff home and see the sights that a soaring eagle can see. Enjoy a glass of wine while watching the magnificent Pacific Ocean breaking against the rocks below on the edge of the property. If you love the ocean you will love this house.</p>
+        <p>Snuggle into the warmth of your own private hot tub while watching the untamed waves of the north coast peak and crash below. Sit comfortably with a book in the window seats while spotting the migrating whales. Soak in the large jetted bath tub or watch movies while sitting by the large fireplace. Enjoy personal access to a gated, private, sandy, isolated, six mile beach.</p>
+        <p>This house is a perfect vacation home. Romantic, warm, and comfortable with a modern decor, this uniquely styled home offers everything your heart can desire.</p>
+        <p>The White Water Ocean Front House has 2 bedrooms with 1 queen bed in each and a convertible sofa in the living room. Central heat keeps every room cozy and warm. A full-size kitchen lets you stay in to cook your own meals or you can go out to numerous choices of unique restaurants near by.</p>
+        <p>IMPORTANT: <br>
+
+        CONTACT: <br>
+
+        AVAILABILITY: Check calendar (right column) for availability. <br>
+
+        BOOK EARLY: To secure your dates book early. <br>
+        Holidays and special days like Valentine's Day book very early, usually 2-3 months in advance. <br>
+
+                  Keywords: Beachfront House <br> <br></p>
+        <div class="row">
+          <i class="fas fa-home col-sm-1 col-12 icon-cog fa-3x"></i>
+          <p class="col-sm-11 card-deck">House</p>
+          <i class="fas fa-user-friends col-sm-1 col-12 icon-cog fa-3x"></i>
+          <p class="col-sm-11 card-deck">Sleeps: 6</p>
+          <i class="fas fa-door-open col-sm-1 col-12 icon-cog fa-3x"></i>
+          <p class="col-sm-11 card-deck">Bedrooms: 2</p>
+          <i class="fas fa-bath col-sm-1 col-12 icon-cog fa-3x"></i>
+          <p class="col-sm-11 card-deck">Bathrooms: 2</p>
+          <i class="fas fa-moon col-sm-1 col-12 icon-cog fa-3x"></i>
+          <p class="col-sm-11 card-deck">Minimum stay: 2-3 nights</p>
+        </div>
+        <hr>
+        <div class="row" style="display: block">
+          <span class="badge badge-light col-sm-1 col-12">Instant confirmation</span>
+          <span class="badge badge-light col-sm-1 col-12">Hot tub</span>
+          <span class="badge badge-light col-sm-1 col-12">Pets welcome</span>
+          <span class="badge badge-light col-sm-1 col-12">No smoking</span>
+          <span class="badge badge-light col-sm-1 col-12">Internet</span>
+          <span class="badge badge-light col-sm-1 col-12">TV</span>
+        </div>
+        <hr>
+        <h2>Amentities</h2>
+        <hr>
+        <h5>Featured</h5>
+        <div class="row">
+          <p class="col-sm-4  col-12">&#183; Washer & Dryer</p>
+          <p class="col-sm-4 col-12">&#183; Heater</p>
+          <p class="col-sm-4 col-12">&#183; Parking</p>
+        </div>
+        <div class="row">
+          <p class="col-sm-4 col-12">&#183; Fireplace</p>
+          <p class="col-sm-4 col-12">&#183; TV</p>
+          <p class="col-sm-4 col-12">&#183; Internet</p>
+        </div>
+        <div class="row">
+          <p class="col-sm-4 col-12">&#183; Satellite</p>
+          <p class="col-sm-4 col-12">&#183; Hot tub</p>
+          <p class="col-sm-4 col-12">&#183; No Smoking</p>
+        </div>
+        <h3 class="title-h1">Rooms & beds</h1>
+          <h5 class="bedrooms">Bedrooms: 2 <span class="between">(Sleeps: 6)</span>
+        </h3>
+        <h5 class="bathrooms">Spaces</h3>
+
+          <div class="list">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-lg">
+                  <p>Kitchen</p>
+                </div>
+                <div class="col-lg">
+                  <p>Desk/Patio</p>
+                </div>
+                <div class="col-lg">
+                  <p>Balcony</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg">
+                  <p>Living Room</p>
+                </div>
+                <div class="col-lg">
+                  <p>Dining</p>
+                </div>
+                <div class="col-lg">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+      <!-- Footer open -->
+      <div class="footer">
+        <p class="text-footer">All material herein © 2005–2021 Agoda Company Pte. Ltd. All Rights Reserved.</p>
+        <p>Agoda is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+        <img src="assets/sponsors.png" alt="">
+
+        <p class="web-footer">infinity-web-EAE-3</p>
+      </div>
+      <!-- Footer close -->
+    </div>
+    <!-- Content of Main page close -->
+
+    <!-- Scroll UP button open -->
+    <div class="scroll-btn">
+      <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <!-- Scroll UP button close -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Real-estate website</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <!-- Icon link -->
+  <link rel="icon" href="assets/infinite.png">
+  <!-- Font-awesome -->
+  <script src="https://kit.fontawesome.com/000e555006.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleListApartment.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header open -->
+    <section id="title">
+      <div class="container-fluid">
+
+        <!-- Navigation Bar open -->
+
+        <!-- Navbar content open-->
+        <nav class="navbar nav-menu navbar-expand-lg navbar-dark ">
+          <!-- toggler button open -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toggler button close -->
+
+          <!-- Navbar slogan open-->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/infinite.png" width="60" height="50" class="d-inline-block align-top" alt="">
+            <font size="6" color="#EB4034" face="'Fredoka One', cursive">INFINITY</font>
+          </a>
+          <!-- Navbar slogan close-->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 180px;">
+
+            <div class="col-9 nav-menu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="habitation.html">Habitation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="VIP.html">VIP Club</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger btn-signIn d-none d-lg-block d-lg-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bars"></i>&nbsp;&nbsp;<i class="fas fa-user-circle "></i>
+                </button>
+                <div class="dropdown-menu ">
+                  <a id="register" class="dropdown-item" href="#">Sign up</a>
+                  <a id="login" class="dropdown-item" href="#">Log in</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Host your home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar content close-->
+
+        <!-- Navigation Bar close -->
+
+      </div>
+    </section>
+    <!-- Header close -->
+
+    <!-- Popup Register Form open -->
+    <div class="popup popup-register">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn">Create new account</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Email" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <i class="fas fa-times-circle fa-2x close"></i>
+      </div>
+    </div>
+    <!-- Popup Register Form close -->
+
+    <!-- Popup Login Form open -->
+    <div class="popup popup-login">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log in as a user</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <i class="fas fa-times-circle fa-2x close"></i>
+      </div>
+    </div> -->
+    <!-- Popup Login Form close -->
+
+    <!-- Content of Main page open -->
+    <div class="wraper VIP-content">
+
+      <div class="container">
+          <div class="row">
+            <div class="col-7">
+              <p class="heading-V">Vip Club</p>
+              <p class="text-inVIP">
+                The Club is unique in its significance, combining a wide variety of services,
+                  goods and services exclusively provided to «Infinity» customers.
+              </p><br><br>
+
+              <p class="descr">The task of the club is to create a special atmosphere of well-being and comfort of its customers.</p>
+
+              <p><font size="6" face="Montserrat">Benefits of the VIP club</font></p>
+
+              <p class="descr">Following the goal of creating a <span><font color="blue" size="4"><strong>luxurious</strong></font></span> lifestyle,
+                a  <span><font color="blue" size="4"><strong>privilege</strong></font></span> program was developed for the company's clients.
+                The residents of our complexes deserve the best,which is why we have tried
+                to form an offer for<span><font color="blue" size="4"><strong> premium products</strong></font></span> and services.
+              </p>
+
+              <p><font size="6" face="Montserrat">Services</font></p>
+              <br>
+
+              <p class="descr">
+                As the list of partners expands, club members will be able to take advantage
+                of new privileges and purchase a variety of luxury goods and <span><font color="blue" size="4"><strong>services</strong></font></span>
+                 on the most favorable terms. Each member of the club will be awarded a user <span><font color="blue" size="4"><strong>card</strong></font></span> .
+              </p>
+              <br>
+
+              <p class="descr">Please send all your questions and suggestions to: <br> <a href="mailto:mamekov_a15@mail.ru?subject=feedback">mamekov_a15@mail.ru</a></p>
+
+            </div>
+            <div class="col-5">
+              <img src="assets/VIP img/vip.png" alt="" width="550">
+            </div>
+          </div>
+                <div class="card-deck card-in-VIP">
+                  <div class="card">
+                    <img src="assets/VIP img/sv.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="one" class="trips-link">Taste salon</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/desiderio.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="two" class="trips-link">Desiderio</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/lorena.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="three" class="trips-link">Lorena</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/smeg.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="four" class="trips-link">SMEG</a>
+                  </div>
+                </div>
+                <div class="card-deck card-in-VIP">
+                  <div class="card">
+                    <img src="assets/VIP img/lusso.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="five" class="trips-link">Lusso</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/kare.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="six" class="trips-link">Kare</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/lapsha.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="seven" class="trips-link">Lapsha</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/zapr.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="eight" class="trips-link">Zapravka</a>
+                  </div>
+                </div>
+                <div class="card-deck card-in-VIP">
+                  <div class="card">
+                    <img src="assets/VIP img/la.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="nine" class="trips-link">La belle</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/asti.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="ten" class="trips-link">ASTI</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/in.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="eleven" class="trips-link">InnerLife</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/enza.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="twelve" class="trips-link">Enza Home</a>
+                  </div>
+                </div>
+                <div class="card-deck card-in-VIP">
+                  <div class="card">
+                    <img src="assets/VIP img/sony.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="thirteen" class="trips-link">SONY</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/slivki.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="fourteen" class="trips-link">SLIVKI</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/k.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="fifteen" class="trips-link">K-Home</a>
+                  </div>
+                  <div class="card">
+                    <img src="assets/VIP img/dinas.png" class="vip-sponsors" alt="...">
+                    <a href="#" id="sixteen" class="trips-link">Dinastia</a>
+                  </div>
+                </div>
+      </div>
+      <!-- Footer open -->
+      <div class="footer">
+        <p class="text-footer">All material herein © 2005–2021 Agoda Company Pte. Ltd. All Rights Reserved.</p>
+        <p>Agoda is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+        <img src="assets/sponsors.png" alt="" />
+
+        <p class="web-footer">infinity-web-EAE-3</p>
+      </div>
+      <!-- Footer close -->
+    </div>
+    <!-- Content of Main page close -->
+
+    <!-- Open description open-->
+    <div class="in-descr one">
+      <div class="desc-content">
+        <p class="head-in-descr">Taste Salon</p>
+        <p class="text-descr">Restaurant with original European cuisine for every day. For all lovers of delicious food and
+          rinks with a unique coffee made from selected grains of their own roasting,
+           fragrant pastries and confectionery products, vitamin salads and sandwiches.
+         </p>
+        <div class="discount">
+          <p class="discount-text">The discount provided for Highvill Kazakhstan customers is 15%.</p>
+        </div>
+        <p class="address">10 Koshkarbayeva Ave., Highvill Astana, block E2-2</p>
+        <p class="phone">+7 701 500 50 15</p>
+        <i class="fas fa-times-circle fa-3x close"></i>
+      </div>
+    </div>
+    <!-- Open description close-->
+
+
+
+    <!-- Scroll UP button open -->
+    <div class="scroll-btn">
+      <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <!-- Scroll UP button close -->
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

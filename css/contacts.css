@@ -1,0 +1,79 @@
+/* Garantee section */
+
+.card-rating {
+  margin-top: 55px;
+}
+
+.in-rating {
+  font-size: 15px;
+}
+
+/* Overheard from travelers */
+
+.card-header {
+  text-align: center;
+  margin-top: 55px;
+  color: grey;
+  font-weight: 600px;
+}
+
+.card-header h3{
+  color:#5392F9;
+  bottom: 0;
+}
+
+.main-container {
+  margin: 2% 20%;
+}
+
+/* Regular font style */
+.main-font {
+  font-family: 'Montserrat';
+  color: #000000;
+}
+
+/* Contrast font style */
+.white-main-font {
+  font-family: 'Montserrat';
+  color: #ffffff;
+  font-size: 16px;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+.background {
+  position: absolute;
+  z-index: 1;
+}
+
+.icon-cog{
+  color: #EB4034;
+}
+
+/* Underlined input fields */
+.sInput{
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #EB4034;
+  font-family: Montserrat;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+.halign {
+  margin: auto;
+}
+
+.form-element {
+  margin: 1rem 0;
+}
+
+.contacts-margin-10rem {
+  margin-top: 10rem;
+}

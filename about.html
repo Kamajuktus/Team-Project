@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About "INFINITY"</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Icon link -->
+  <link rel="icon" href="assets/infinite.png">
+  <!-- Font-awesome -->
+  <script src="https://kit.fontawesome.com/000e555006.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Header open -->
+    <section id="title">
+      <div class="container-fluid">
+
+        <!-- Navigation Bar open -->
+
+        <!-- Navbar content open-->
+        <nav class="navbar nav-menu navbar-expand-lg navbar-dark ">
+          <!-- toggler button open -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toggler button close -->
+
+          <!-- Navbar slogan open-->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/infinite.png" width="60" height="50" class="d-inline-block align-top" alt="">
+            <font size="6" color="#EB4034" face="'Fredoka One', cursive">INFINITY</font>
+          </a>
+          <!-- Navbar slogan close-->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 180px;">
+
+            <div class="col-9 nav-menu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="habitation.html">Habitation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="VIP.html">VIP Club</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger btn-signIn d-none d-lg-block d-lg-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bars"></i>&nbsp;&nbsp;<i class="fas fa-user-circle "></i>
+                </button>
+                <div class="dropdown-menu ">
+                  <a id="register" class="dropdown-item" href="#">Sign up</a>
+                  <a id="login" class="dropdown-item" href="#">Log in</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Host your home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar content close-->
+
+        <!-- Navigation Bar close -->
+
+
+      </div>
+    </section>
+    <!-- Header close -->
+
+    <!-- Popup Register Form open -->
+    <div class="popup popup-register">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn">Create new account</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Email" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <i class="fas fa-times-circle fa-2x close"></i>
+      </div>
+    </div>
+    <!-- Popup Register Form close -->
+
+    <!-- Popup Login Form open -->
+    <div class="popup popup-login">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log in as a user</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form <i class="fas fa-times-circle fa-2x close"></i>
+        <i class="fas fa-times-circle fa-2x close"></i>
+      </div>
+    </div>
+    <!-- Popup Login Form close -->
+
+    <!-- Header text open -->
+    <section class="main-container main-font about-margin-10rem">
+      <!-- Very inspiring slogan -->
+      <h1>
+        <font color="#EB4034">INFINITY</font> - is a heart of the capital
+      </h1>
+      <p>In the world we strive to build, the boundary of your comfort zone extends far beyond your front door.</p>
+      <!-- Video -->
+      <div class="col-sm-12">
+        <video class="about-video" autoplay loop muted>
+          <source src="assets/about images/flight-over-city.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Creed -->
+      <h1 class="small-margin centered-text">Company's creed</h1>
+
+      <!-- Garantee open -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card-rating" style="width: 15rem;">
+            <div class="card-body">
+              <center>
+                <img src="assets/safe.png" alt="" class="signs">
+                <h5 class="card-text in-rating">Peace of mind</h5>
+                <p class="card-text in-rating">Our Book with Confidence guarantee gives you 24/7 support</p>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card-rating" style="width: 15rem;">
+            <div class="card-body">
+              <center>
+                <img src="assets/privacy.png" alt="" class="signs">
+                <h5 class="card-text in-rating">All the privacy of home</h5>
+                <p class="card-text in-rating">Enjoy full kitchens, laundry, pools, yards and more</p>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card-rating" style="width: 15rem;">
+            <div class="card-body">
+              <center>
+                <img src="assets/value.png" alt="" class="signs">
+                <h5 class="card-text in-rating">More for less</h5>
+                <p class="card-text in-rating">More space, more privacy, more amenities — more value</p>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card-rating" style="width: 15rem;">
+            <div class="card-body">
+              <center>
+                <img src="assets/hurt.png" alt="" class="signs">
+                <h5 class="card-text in-rating">A place for everyone</h5>
+                <p class="card-text in-rating">We stand for diversity, inclusion and families everywhere.</p>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Garantee close -->
+
+      <!-- Overheard from travelers open -->
+      <div class="title-text">
+        <center>Overheard from travelers</center>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="card-quote">
+            <div class="card-header">
+              <h3 id="first-review-title">Fairmont Singapore</h3>
+              <p id="first-review-place">in Singapore</p>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p id="first-review-body">"The hotel was simple amazing and I couldn't thank Agoda more for helping out. I've been a customer for awhile and I have to say it's probably my favourite app!"</p>
+                <footer id="first-review-person" class="blockquote-footer">Malvin from Singapore</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card-quote">
+            <div class="card-header">
+              <h3 id="second-review-title">Klausturhof Guesthouse</h3>
+              <p id="second-review-place">in Iceland</p>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p id="second-review-body">"I could not have asked for a better stay than Klausturhof. Thanks to Agoda."</p>
+                <footer id="second-review-person" class="blockquote-footer">Vishwas from India</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card-quote">
+            <div class="card-header">
+              <h3 id="third-review-title">Hotel Eucalyptus</h3>
+              <p id="third-review-place">in Greece</p>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p id="third-review-body">"We booked Hotel Eucalyptus through Agoda after reading a handful of reviews, and it was easily the best decision we made for our trip to Santorini."</p>
+                <footer id="third-review-person" class="blockquote-footer">Joyce from Canada</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Overheard from travelers close -->
+      <!-- Changing user reviews -->
+      <script src="js/about.js"></script>
+
+      <!-- History text open -->
+      <div class="row small-margin">
+        <h1 class="col-sm-12">Company's history</h1>
+        <p class="col-md-8 col-sm-12">The company dates back to 1989. And over the years, it is known for its
+          best quality in the construction industry and reputation recognized outside
+          of Kazakhstan. Principle and sincerity are two keywords that form the core of the
+          <font color="#EB4034">INFINITY</font> philosophy. Following its principles, the company does everything
+          possible to develop a high-quality housing culture. <font color="#EB4034">INFINITY</font>'s is
+          committed to building a better future for customer satisfaction.
+        </p>
+        <img class="col-md-4 col-sm-12" src="assets/about images/flat1.jpg">
+      </div>
+      <!-- History text close -->
+    </section>
+
+
+
+    <!-- Footer open -->
+    <div class="footer">
+      <p class="text-footer">All material herein © 2005–2021 Agoda Company Pte. Ltd. All Rights Reserved.</p>
+      <p>Agoda is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+      <img src="assets/sponsors.png" alt="">
+
+      <p class="web-footer">infinity-web-EAE-3</p>
+    </div>
+    <!-- Footer close -->
+
+    <!-- Scroll UP button open -->
+    <div class="scroll-btn">
+      <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <!-- Scroll UP button close -->
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

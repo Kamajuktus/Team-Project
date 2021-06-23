@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Live anywhere</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <!-- Icon link -->
+  <link rel="icon" href="assets/infinite.png">
+  <!-- Font-awesome -->
+  <script src="https://kit.fontawesome.com/000e555006.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="css/styleListApartment.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Header open -->
+    <section id="title">
+      <div class="container-fluid">
+
+        <!-- Navigation Bar open -->
+
+        <!-- Navbar content open-->
+        <nav class="navbar nav-menu navbar-expand-lg navbar-dark ">
+          <!-- toggler button open -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toggler button close -->
+
+          <!-- Navbar slogan open-->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/infinite.png" width="60" height="50" class="d-inline-block align-top" alt="">
+            <font size="6" color="#EB4034" face="'Fredoka One', cursive">INFINITY</font>
+          </a>
+          <!-- Navbar slogan close-->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 180px;">
+
+            <div class="col-9 nav-menu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="habitation.html">Habitation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="VIP.html">VIP Club</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger btn-signIn d-none d-lg-block d-lg-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bars"></i>&nbsp;&nbsp;<i class="fas fa-user-circle "></i>
+                </button>
+                <div class="dropdown-menu ">
+                  <a id="register" class="dropdown-item" href="#">Sign up</a>
+                  <a id="login" class="dropdown-item" href="#">Log in</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Host your home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar content close-->
+
+        <!-- Navigation Bar close -->
+
+
+      </div>
+      <!-- Header close -->
+    </section>
+
+    <!-- Popup Register Form open -->
+    <div class="popup popup-register">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn">Create new account</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Email" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <i class="fas fa-times-circle fa-2x close"></i>
+      </div>
+    </div>
+    <!-- Popup Register Form close -->
+
+    <!-- Popup Login Form open -->
+    <div class="popup popup-login">
+      <div class="popup-content">
+        <div class="button-box">
+          <div id="btn-reg"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log in as a user</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fab-icon fa-facebook-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-twitter-square fa-3x"></i>&nbsp;<i class="fab fab-icon fa-google-plus-square fa-3x"></i>
+        </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form <i class="fas fa-times-circle fa-2x close"></i>
+        <i class="fas fa-times-circle fa-2x close"></i>
+      </div>
+    </div>
+    <!-- Popup Login Form close -->
+
+    <!-- Main page open -->
+    <div class="container">
+
+      <!-- header open -->
+      <div class="header">
+        <div class="container-fluid">
+
+          <div class="title-text2">
+            Live anywhere
+          </div>
+
+          <div class="header-choise">
+            <div class="row">
+
+              <div class="col-lg-4 col-xs col-md-6">
+                <a href="#element1" class="buttonscroll">
+                  <img src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=480" width="350">
+                  <h4 class="name-house">Entire house</h4>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-xs col-md-6">
+                <a href="#element2" class="buttonscroll">
+                  <img src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=480" width="350">
+                  <h4 class="name-house">Unique stays</h4>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-xs col-md-6">
+                <a href="#element3" class="buttonscroll">
+                  <img src="https://a0.muscache.com/im/pictures/a596c528-a2e9-4417-9bbe-ceb68b2f6b9c.jpg?im_w=480" width="350">
+                  <h4 class="name-house">Cabins and cottages</h4>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- header close -->
+
+      <!-- div for entire house open -->
+      <section id="element1">
+        <div class="entire-house">
+          <!-- Title text open -->
+          <div class="title-text2">
+            Entire House
+          </div>
+          <!-- Title text close -->
+          <div class="card-deck">
+
+            <div class="card">
+              <!-- Второе окно при нажатии -->
+              <dialog id="dialog">
+                <h6>Entire house hosted by Anzhelika</h6>
+                <p>2 guests · 1 bedroom · 1 bed · 1 bath</p>
+                <button id="close">Закрыть</button>
+              </dialog>
+              <button id="show">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/db3a6787-06b8-4eb5-8e4d-f1809b3428f5.jpg?im_w=720" alt="Card image cap">
+              </button>
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">102$</span> / night</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <dialog id="dialog1">
+                <h6>Entire house hosted by Malika</h6>
+                <p>3 guests · 2 bedroom · 1 bed · 2 bath</p>
+                <button id="close1">Закрыть</button>
+              </dialog>
+              <button id="show1">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/e040a5c8-5835-4ef9-a8aa-d040b2fa4607.jpg?im_w=1200" alt="Card image cap">
+              </button>
+              <div class="card-body">
+                <h5>Entire house - Domodedovo</h5>
+                <p>Двухэтажный дом с сауной</p>
+                <p><span class="price">98$</span> / night</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <dialog id="dialog2">
+                <h6>Entire house hosted by Maksim</h6>
+                <p>2 guests · 2 bedroom · 1 bed · 1 bath</p>
+                <button id="close2">Закрыть</button>
+              </dialog>
+              <button id="show2">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/pro_photo_tool/Hosting-25445326-unapproved/original/5d5559f2-2447-4d79-a892-1a406aa3b738.JPEG?im_w=720" alt="Card image cap">
+              </button>
+              <div class="card-body">
+                <h5>Entire house - Malinovka</h5>
+                <p>Дом в Малиновке с сауной и бассейном.</p>
+                <p><span class="price">85$</span> / night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-deck">
+            <div class="card">
+              <dialog id="dialog3">
+                <h6>Entire house hosted by Yekaterina</h6>
+                <p>1 guests · 2 bedroom · 1 bed · 1 bath</p>
+                <button id="close3">Закрыть</button>
+              </dialog>
+              <button id="show3">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/a610df0d-0221-4851-a599-bf412125f3b6.jpg?im_w=1200" alt="Card image cap">
+              </button>
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом...</p>
+                <p><span class="price">92$</span> / night</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <dialog id="dialog4">
+                <h6>Entire house hosted by Evgeniy</h6>
+                <p>2 guests · 1 bedroom · 1 bed · 1 bath</p>
+                <button id="close4">Закрыть</button>
+              </dialog>
+              <button id="show4">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/de947780-c5ff-42f7-893f-d84f145149a1.jpg?im_w=720" alt="Card image cap">
+              </button>
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">78$</span> / night</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <dialog id="dialog5">
+                <h6>Entire house hosted by Aleksey</h6>
+                <p>2 guests · 1 bedroom · 1 bed · 1 bath</p>
+                <button id="close5">Закрыть</button>
+              </dialog>
+              <button id="show5">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/09d657c3-8819-4701-867a-8e7a8afc3a73.jpg?im_w=720" alt="Card image cap">
+              </button>
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">89$</span> / night</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Entire house div close -->
+
+      <!-- Unique stays div open -->
+      <section id="element2">
+        <div class="unique-stays">
+          <!-- Title text open -->
+          <div class="title-text2">
+            Unique stays
+          </div>
+          <!-- Title text close -->
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://a0.muscache.com/im/pictures/82308926-66d8-433a-80be-2e1d3abd40eb.jpg?im_w=720" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">75$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://a0.muscache.com/im/pictures/fa38956f-6bde-4ae7-8a95-01077676f3d1.jpg?im_w=1200" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">82$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://a0.muscache.com/im/pictures/2d1930a7-98ee-4ae9-8161-d1ed3388990b.jpg?im_w=1200" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">85$</span> / night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://a0.muscache.com/im/pictures/2be05cca-92ea-4d84-80d4-e62d250cacde.jpg?im_w=1200" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">118$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://a0.muscache.com/im/pictures/ea48f268-8deb-4cac-8554-a9c8062fe1e1.jpg?im_w=1200" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">72$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://a0.muscache.com/im/pictures/58c08f4d-6196-4d63-a4a2-39538814b20f.jpg?im_w=1200" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">69$</span> / night</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section <!-- Unique stays div close -->
+
+      <!-- Cabins and cottages div open -->
+      <section id="element3">
+        <div class="cabins">
+          <!-- Title text open -->
+          <div class="title-text2">
+            Cabins and cottages
+          </div>
+          <!-- Title text close -->
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://a0.muscache.com/im/pictures/6d73ae25-304a-407d-ba22-59225cf46ae4.jpg?im_w=1200" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">100$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="assets/f0da71a4-5f9a-47d1-a8b7-64b685608ef8.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">111$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://i1.wp.com/news.theregistryps.com/wp-content/uploads/2020/07/Sakamoto_2S_x02.jpg?fit=1200%2C675&ssl=1" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">83$</span> / night</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://bloximages.chicago2.vip.townnews.com/news-herald.com/content/tncms/assets/v3/editorial/3/e2/3e2f515d-1451-592a-ad47-c3473f951860/5ba127e6c10d0.image.jpg?crop=600%2C338%2C0%2C7&resize=1200%2C675&order=crop%2Cresize"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">57$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1200/675/chocolate20cottage201.jpg?ve=1&tl=1" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">59$</span> / night</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://i0.wp.com/www.theurbanist.org/wp-content/uploads/2020/09/PreApprovedDADU_Artisans1-scaled.jpg?fit=1200%2C675&ssl=1" alt="Card image cap">
+              <div class="card-body">
+                <h5>Entire house - Moscow</h5>
+                <p>Дом с камином и панорамным видом... </p>
+                <p><span class="price">75$</span> / night</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cabins and cottages div close -->
+
+    </div>
+    <!-- Main page div close -->
+
+    <!-- Footer open -->
+    <div class="footer">
+      <p class="text-footer">All material herein © 2005–2021 Agoda Company Pte. Ltd. All Rights Reserved.</p>
+      <p>Agoda is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+      <img src="assets/sponsors.png" alt="">
+
+      <p class="web-footer">infinity-web-EAE-3</p>
+    </div>
+    <!-- Footer close -->
+
+    <!-- Scroll UP button open -->
+    <div class="scroll-btn">
+      <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <!-- Scroll UP button close -->
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
